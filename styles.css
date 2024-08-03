@@ -1,0 +1,123 @@
+* {
+    font-family: Poppins, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4ece7;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main, .section {
+    width: 50vw;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top: 12px solid #8b5a2b;
+    border-radius: 10px;
+    margin: 13px;
+    margin-bottom: 0;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.main {
+    height: auto;
+}
+.main h1 {
+    font-size: 28px;
+}
+.section {
+    background-color: #fff;
+    height: auto;
+    padding: 20px;
+    border-top: none;
+}
+input[type="text"], input[type="email"], select, textarea {
+    border: 1px solid #8b5a2b;
+    border-radius: 4px;
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+}
+.submit {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+button {
+    margin: 13px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #8b5a2b;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #5a3a1b;
+    transition: ease-in 200ms;
+}
+.rule, .policy {
+    width: 50vw;
+    font-size: 14px;
+    color: grey;
+}
+.policy {
+    font-size: 16px;
+}
+.policy a {
+    text-decoration: none;
+    color: grey;
+    text-decoration: underline;
+}
+img {
+    margin-top: 13px;
+    height: 200px;
+    width: 50vw;
+    object-fit: fill;
+    object-position: center;
+    border-radius: 10px;
+}
+.branding {
+    text-align: center;
+}
+@media only screen and (max-width: 1000px){
+    img, .main, .section, .submit, .rule, .policy, .branding {
+        width: 90vw;
+    }
+    img {
+        height: 125px;
+    }
+    .main {
+        height: auto;
+        font-size: 14px;
+    }
+    .section {
+        height: auto;
+        font-size: 14px;
+    }
+    .main h1 {
+        font-size: 22px;
+    }
+    .main p, h4 {
+        margin: 10px 0px;
+    }
+    input[type="text"], input[type="email"], select, textarea {
+        padding: 8px;
+    }
+    button {
+        padding: 10px 22px;
+        border-radius: 5px;
+    }
+}
